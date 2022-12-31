@@ -1,0 +1,14 @@
+package com.redcarpetup.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class testController {
+    @RequestMapping("/welcome")
+    @ResponseBody
+    public String firstpage() {
+        return "Hello, World!";
+    }
+}
